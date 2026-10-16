@@ -221,8 +221,8 @@ brightness OSDs show, and the binds stay available while the session is locked.
 ```toml
 "XF86AudioRaiseVolume" = { action = "spawn:noctalia msg volume-up", allow_when_locked = true }
 "XF86AudioLowerVolume" = { action = "spawn:noctalia msg volume-down", allow_when_locked = true }
-"XF86AudioMute" = { action = "spawn:noctalia msg volume-mute", allow_when_locked = true }
-"XF86AudioPlay" = { action = "spawn:noctalia msg media toggle", allow_when_locked = true }
+"XF86AudioMute" = { action = "spawn:noctalia msg volume-mute", allow_when_locked = true, repeat = false }
+"XF86AudioPlay" = { action = "spawn:noctalia msg media toggle", allow_when_locked = true, repeat = false }
 "XF86AudioNext" = { action = "spawn:noctalia msg media next", allow_when_locked = true }
 "XF86AudioPrev" = { action = "spawn:noctalia msg media previous", allow_when_locked = true }
 "XF86MonBrightnessUp" = { action = "spawn:noctalia msg brightness-up", allow_when_locked = true }
